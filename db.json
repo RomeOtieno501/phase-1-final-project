@@ -1,52 +1,53 @@
 {
   "guests": [
     {
-      "id":1,
-      "name": "Rome Otieno",
-      "national id": 42789337,
-      "room type": "Suite",
-      "days in": 4,
-      "payment method": "Cash."
+      "id": "1",
+      "fullName": "Rome Otieno",
+      "nationalId": 42789337,
+      "dateOfPresence": "2024-10-01",
+      "paymentMethod": "Cash"
     },
     {
-      "id": 2,
-      "name": "Trevor Odhiambo",
-      "national id": 20408032,
-      "room type": "Double",
-      "days in": 2,
-      "payment method": "Mpesa."
+      "id": "2",
+      "fullName": "Trevor Odhiambo",
+      "nationalId": 20408032,
+      "dateOfPresence": "2024-10-02",
+      "paymentMethod": "Credit Card"
     },
     {
-      "id": 3,
-      "name":"Katelyne Aluoch",
-      "national id": 21518461,
-      "room type": "Suite",
-      "days in": 1,
-      "payment method": "Mpesa."
+      "id": "3",
+      "fullName": "Katelyne Aluoch",
+      "nationalId": 21518461,
+      "dateOfPresence": "2024-10-03",
+      "paymentMethod": "Mobile Payment"
     },
     {
-      "id": 4,
-      "name": "Eric Ojuro",
-      "national id": 24318496,
-      "room type": "Single",
-      "days in": 7,
-      "payment method": "Cash."
+      "id": "4",
+      "fullName": "Eric Ojuro",
+      "nationalId": 24318496,
+      "dateOfPresence": "2024-10-04",
+      "paymentMethod": "Cash"
     },
     {
-      "id": 5,
-      "name": "Lavine Akinyi",
-      "national id": 41021143,
-      "room type": "Single",
-      "days in": 2,
-      "payment method": "Cash."
+      "id": "5",
+      "fullName": "Lavine Akinyi",
+      "nationalId": 41021143,
+      "dateOfPresence": "2024-10-05",
+      "paymentMethod": "Cash"
     },
     {
-      "id": 6,
-      "name": "Maureen Ochola",
-      "national id": 35651411,
-      "room type": "Double",
-      "days in": 1,
-      "payment method": "Mpesa."
+      "id": "6",
+      "fullName": "Maureen Ochola",
+      "nationalId": 35651411,
+      "dateOfPresence": "2024-10-06",
+      "paymentMethod": "Cash"
+    },
+    {
+      "id": "16c5",
+      "fullName": "John Ouma",
+      "dateOfPresence": "2024-10-05",
+      "nationalId": "42789337",
+      "paymentMethod": "Mobile Payment"
     }
   ]
 }
