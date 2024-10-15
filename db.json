@@ -1,0 +1,52 @@
+{
+  "guests": [
+    {
+      "id":1,
+      "name": "Rome Otieno",
+      "national id": 42789337,
+      "room type": "Suite",
+      "days in": 4,
+      "payment method": "Cash."
+    },
+    {
+      "id": 2,
+      "name": "Trevor Odhiambo",
+      "national id": 20408032,
+      "room type": "Double",
+      "days in": 2,
+      "payment method": "Mpesa."
+    },
+    {
+      "id": 3,
+      "name":"Katelyne Aluoch",
+      "national id": 21518461,
+      "room type": "Suite",
+      "days in": 1,
+      "payment method": "Mpesa."
+    },
+    {
+      "id": 4,
+      "name": "Eric Ojuro",
+      "national id": 24318496,
+      "room type": "Single",
+      "days in": 7,
+      "payment method": "Cash."
+    },
+    {
+      "id": 5,
+      "name": "Lavine Akinyi",
+      "national id": 41021143,
+      "room type": "Single",
+      "days in": 2,
+      "payment method": "Cash."
+    },
+    {
+      "id": 6,
+      "name": "Maureen Ochola",
+      "national id": 35651411,
+      "room type": "Double",
+      "days in": 1,
+      "payment method": "Mpesa."
+    }
+  ]
+}
