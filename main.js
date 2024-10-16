@@ -21,4 +21,21 @@ document.addEventListener("DOMContentLoaded", () => {
             .catch(error => console.error('Error fetching guests:', error));
     }
     fetchGuests();
-})
+
+    function addGuest(fullName, dateOfPresence, nationalId, paymentMethod) {
+        const guest = { fullName, dateOfPresence, nationalId, paymentMethod };
+    
+        fetch('http://localhost:3000/guests', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(guest)
+        })
+        .then(response => response.json())
+        .then(newGuest => {
+            addGuestToDOM(newGuest.fullName, newGuest.dateOfPresence, newGuest.nationalId, newGuest.paymentMethod, newGuest.id);
+        })
+        .catch(error => console.error('Error adding guest:', error));
+    }
+});
