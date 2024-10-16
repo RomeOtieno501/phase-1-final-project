@@ -48,6 +48,13 @@
       "dateOfPresence": "2024-10-05",
       "nationalId": "42789337",
       "paymentMethod": "Mobile Payment"
+    },
+    {
+      "id": "4b6c",
+      "fullName": "Ian Owino",
+      "dateOfPresence": "2024-10-05",
+      "nationalId": "45657421",
+      "paymentMethod": "Mobile Payment"
     }
   ]
 }

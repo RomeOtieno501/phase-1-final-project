@@ -1,3 +1,50 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e58f8f;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 50%;
+    margin: auto;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    background: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #555;
+}
+
+#guestList {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
