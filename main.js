@@ -9,4 +9,16 @@ document.addEventListener("DOMContentLoaded", () => {
     
         addGuest(fullName, dateOfPresence, nationalId, paymentMethod);
     });
+
+    function fetchGuests() {
+        fetch('http://localhost:3000/guests')
+            .then(response => response.json())
+            .then(guests => {
+                guests.forEach(guest => {
+                    addGuestToDOM(guest.fullName, guest.dateOfPresence, guest.nationalId, guest.paymentMethod, guest.id);
+                });
+            })
+            .catch(error => console.error('Error fetching guests:', error));
+    }
+    fetchGuests();
 })
