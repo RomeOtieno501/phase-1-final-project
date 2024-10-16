@@ -38,4 +38,20 @@ document.addEventListener("DOMContentLoaded", () => {
         })
         .catch(error => console.error('Error adding guest:', error));
     }
+
+    function addGuestToDOM(fullName, dateOfPresence, nationalId, paymentMethod, id) {
+        const guestList = document.getElementById('guestList');
+        const guestDiv = document.createElement('div');
+        guestDiv.className = 'guest';
+        guestDiv.dataset.id = id;
+        guestDiv.innerHTML = `
+            <p>Name: ${fullName}</p>
+            <p>Date of Presence: ${dateOfPresence}</p>
+            <p>National ID: ${nationalId}</p>
+            <p>Payment Method: ${paymentMethod}</p>
+            <button onclick="${editGuest(this)}">Edit Reservation</button>
+            <button onclick="${removeGuest(this)}">Remove Reservation</button>
+        `;
+        guestList.appendChild(guestDiv);
+    }
 });
