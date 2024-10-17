@@ -68,4 +68,22 @@ document.addEventListener("DOMContentLoaded", () => {
         .catch(error => console.error('Error removing guest:', error));
     }
     removeGuest()
+
+    function editGuest(id) {
+        const guest = { fullName, dateOfPresence, nationalId, paymentMethod };
+    
+        fetch(`http://localhost:3000/guests/${id}`, {
+            method: 'PATCH',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(guest)
+        })
+        .then(response => response.json())
+        .then(edittedGuest => {
+            addGuestToDOM(edittedGuest.fullName, edittedGuest.dateOfPresence, edittedGuest.nationalId, edittedGuest.paymentMethod, edittedGuest.id);
+        })
+        .catch(error => console.error('Error updating guest:', error));
+    }
+    editGuest()
 });
