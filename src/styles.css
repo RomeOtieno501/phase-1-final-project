@@ -1,32 +1,73 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #e58f8f;
     margin: 0;
     padding: 0;
 }
 
-.container {
-    width: 50%;
-    margin: auto;
-    overflow: hidden;
+.hero-section {
+    background-image: url('/img/Exterior-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    position: relative;
 }
 
-h1 {
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
     text-align: center;
+}
+
+#romegardens {
+    color: white;
+}
+
+#motto{
+    color: white;
+}
+
+#booking{
+    color: white;
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+h1, h2 {
     color: #333;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+p {
+    line-height: 1.6;
+    color: #555;
 }
 
 form {
     background: #ffffff;
     padding: 20px;
-    margin-bottom: 20px;
+    margin-top: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 #guestList {
-    background: #fff;
+    background: #ffffff;
     padding: 20px;
+    margin-top: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -46,5 +87,15 @@ button {
 }
 
 button:hover {
-    background: #555;
+    background: #e58f8f;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h4 {
+    margin-top: 40px;
+    text-align: center;
+    color: #333;
 }
