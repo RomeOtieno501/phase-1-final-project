@@ -37,24 +37,10 @@
     },
     {
       "id": "6",
-      "fullName": "Maureen Ochola",
-      "nationalId": 35651411,
-      "dateOfPresence": "2024-10-06",
+      "fullName": "Maureen Akoth",
+      "nationalId": "35651411",
+      "dateOfPresence": "2024-10-03",
       "paymentMethod": "Cash"
-    },
-    {
-      "id": "16c5",
-      "fullName": "Brian Orowe",
-      "dateOfPresence": "2024-10-05",
-      "nationalId": "42789337",
-      "paymentMethod": "Mobile Payment"
-    },
-    {
-      "id": "4b6c",
-      "fullName": "Ian Owino",
-      "dateOfPresence": "2024-10-05",
-      "nationalId": "45657421",
-      "paymentMethod": "Mobile Payment"
     }
   ]
 }

@@ -1,15 +1,15 @@
-document.addEventListener("DOMContentLoaded", () => {  
+document.addEventListener("DOMContentLoaded", () => {
     document.getElementById('guestForm').addEventListener('submit', function(e) {
         e.preventDefault();
-    
+
         const fullName = document.getElementById('fullName').value;
         const dateOfPresence = document.getElementById('dateOfPresence').value;
         const nationalId = document.getElementById('nationalId').value;
         const paymentMethod = document.getElementById('paymentMethod').value;
-    
+
         addGuest(fullName, dateOfPresence, nationalId, paymentMethod);
     });
-    
+
     function fetchGuests() {
         fetch('http://localhost:3000/guests')
             .then(response => response.json())
@@ -21,10 +21,10 @@ document.addEventListener("DOMContentLoaded", () => {
             .catch(error => console.error('Error fetching guests:', error));
     }
     fetchGuests();
-    
+
     function addGuest(fullName, dateOfPresence, nationalId, paymentMethod) {
         const guest = { fullName, dateOfPresence, nationalId, paymentMethod };
-    
+
         fetch('http://localhost:3000/guests', {
             method: 'POST',
             headers: {
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
         })
         .catch(error => console.error('Error adding guest:', error));
     }
-    
+
     function addGuestToDOM(fullName, dateOfPresence, nationalId, paymentMethod, id) {
         const guestList = document.getElementById('guestList');
         const guestDiv = document.createElement('div');
@@ -49,41 +49,21 @@ document.addEventListener("DOMContentLoaded", () => {
             <p>Date of Presence: ${dateOfPresence}</p>
             <p>National ID: ${nationalId}</p>
             <p>Payment Method: ${paymentMethod}</p>
-            <button onclick = ${editGuest.guest.id}>Edit</button>
-            <button onclick = ${removeGuest.guest.id}">Remove</button>
+            <button id='remove' onclick="removeGuest(this)">Remove</button>
         `;
         guestList.appendChild(guestDiv);
     }
-
-    function removeGuest(id) {
-        const guestDiv = button.parentElement;
-        const id = guestDiv.dataset.id;
-    
-        fetch(`http://localhost:3000/guests/${id}`, {
-            method: 'DELETE'
-        })
-        .then(() => {
-            guestDiv.remove();
-        })
-        .catch(error => console.error('Error removing guest:', error));
-    }
-    removeGuest()
-
-    function editGuest(id) {
-        const guest = { fullName, dateOfPresence, nationalId, paymentMethod };
-    
-        fetch(`http://localhost:3000/guests/${id}`, {
-            method: 'PATCH',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(guest)
-        })
-        .then(response => response.json())
-        .then(edittedGuest => {
-            addGuestToDOM(edittedGuest.fullName, edittedGuest.dateOfPresence, edittedGuest.nationalId, edittedGuest.paymentMethod, edittedGuest.id);
-        })
-        .catch(error => console.error('Error updating guest:', error));
-    }
-    editGuest()
 });
+
+function removeGuest(button) {
+    const guestDiv = button.parentElement;
+    const id = guestDiv.dataset.id;
+
+    fetch(`http://localhost:3000/guests/${id}`, {
+        method: 'DELETE'
+    })
+    .then(() => {
+        guestDiv.remove();
+    })
+    .catch(error => console.error('Error removing guest:', error));
+}
