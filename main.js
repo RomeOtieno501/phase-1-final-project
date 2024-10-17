@@ -54,4 +54,18 @@ document.addEventListener("DOMContentLoaded", () => {
         `;
         guestList.appendChild(guestDiv);
     }
+
+    function removeGuest(id) {
+        const guestDiv = button.parentElement;
+        const id = guestDiv.dataset.id;
+    
+        fetch(`http://localhost:3000/guests/${id}`, {
+            method: 'DELETE'
+        })
+        .then(() => {
+            guestDiv.remove();
+        })
+        .catch(error => console.error('Error removing guest:', error));
+    }
+    removeGuest()
 });
