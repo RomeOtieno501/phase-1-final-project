@@ -24,6 +24,13 @@ form {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+#guestList {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 input, select, button {
     width: 100%;
     padding: 10px;
@@ -40,11 +47,4 @@ button {
 
 button:hover {
     background: #555;
-}
-
-#guestList {
-    background: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
