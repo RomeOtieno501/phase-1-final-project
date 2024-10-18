@@ -70,9 +70,16 @@ Once the project is set up, you can test the following features:
 **License**
 This project is licensed under the MIT License.
 
+<<<<<<< HEAD
 **Author**
+=======
+Author
+>>>>>>> 03ddf0db7b5925fdb012722bb4dbee3740fad9d9
 Rome Ojuro Levin
 Email: otienorome2@gmail.com
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 03ddf0db7b5925fdb012722bb4dbee3740fad9d9
