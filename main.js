@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     function fetchGuests() {
-        fetch('http://localhost:3000/guests')
+        fetch('https://json-server-6-89ab.onrender.com')
             .then(response => response.json())
             .then(guests => {
                 guests.forEach(guest => {
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function addGuest(fullName, dateOfPresence, nationalId, paymentMethod) {
         const guest = { fullName, dateOfPresence, nationalId, paymentMethod };
 
-        fetch('http://localhost:3000/guests', {
+        fetch('https://json-server-6-89ab.onrender.com', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -59,7 +59,7 @@ function removeGuest(button) {
     const guestDiv = button.parentElement;
     const id = guestDiv.dataset.id;
 
-    fetch(`http://localhost:3000/guests/${id}`, {
+    fetch(`https://json-server-6-89ab.onrender.com/${id}`, {
         method: 'DELETE'
     })
     .then(() => {
