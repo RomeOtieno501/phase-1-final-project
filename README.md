@@ -1,10 +1,6 @@
 # phase-1-final-project
 
-<<<<<<< HEAD
 # Rome Gardens Online Booking System
-=======
-## Rome Gardens Online Booking System
->>>>>>> 03a2ad48b10f690e8ce4985a383f04e8b2857bfb
 
 ## Overview
 This is a simple web application for booking rooms at **Rome Gardens**, a luxurious hotel in Nairobi. The app allows users to reserve a room by filling out a form, view the list of guests, and remove guests from the list. Data is stored and retrieved from a mock JSON database hosted on Render using `json-server`.
@@ -78,8 +74,4 @@ This project is licensed under the MIT License.
 Rome Ojuro Levin
 Email: otienorome2@gmail.com
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 03a2ad48b10f690e8ce4985a383f04e8b2857bfb
 
